@@ -1,0 +1,9 @@
+<h1>{{titulo}}</h1>
+
+<ul>
+  <li *ngFor="let mes of meses; let i = index">{{i+1}} {{mes}}</li>
+</ul>
+
+<button (click)="borrarMes()">Eliminar més</button>
+
+<app-dias></app-dias>

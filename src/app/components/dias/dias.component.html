@@ -1,0 +1,10 @@
+<h1>{{titulo}}</h1>
+
+<ul>
+  <li *ngFor="let dia of dias; let i = index">{{i+1}} {{dia}}</li>
+</ul>
+
+<button (click)="borrarDia()">Eliminar día</button>
+<button (click)="borrarDias()">Eliminar días</button>
+
+<app-comidas></app-comidas>

@@ -1,0 +1,9 @@
+<h1>{{titulo}}</h1>
+
+<ul>
+  <li *ngFor="let comida of comidas; let i = index">{{i+1}} {{comida}}</li>
+</ul>
+
+<button (click)="borrarComidas()">Eliminar comidas</button>
+
+<app-ciudades></app-ciudades>
